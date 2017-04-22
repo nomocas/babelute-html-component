@@ -1,54 +1,8 @@
 # babelute-html Component Class
 
-[![Travis branch](https://img.shields.io/travis/nomocas/babelute-html-component/master.svg)](https://travis-ci.org/nomocas/babelute-html-component)
-[![bitHound Overall Score](https://www.bithound.io/github/nomocas/babelute-html-component/badges/score.svg)](https://www.bithound.io/github/nomocas/babelute-html-component)
-[![npm](https://img.shields.io/npm/v/babelute-html-component.svg)]()
-[![npm-downloads](https://img.shields.io/npm/dm/babelute-html-component.svg)]()
-[![licence](https://img.shields.io/npm/l/babelute-html-component.svg)](https://spdx.org/licenses/MIT)
-[![dependencies](https://img.shields.io/david/nomocas/babelute-html-component.svg)]()
-[![dev-dependencies](https://img.shields.io/david/dev/nomocas/babelute-html-component.svg)]()
+Warning ! Deprecated. 
 
-React Like Component Class for [babelute-html-lexicon](https://github.com/nomocas/babelute-html-lexicon).
-
-(Almost) same API than [React component](https://facebook.github.io/react/docs/react-component.html).
-
-Usable with [babelute-html-dom-diffing-pragmatics](https://github.com/nomocas/babelute-html-dom-diffing-pragmatics) and [babelute-html-string-pragmatics](https://github.com/nomocas/babelute-html-string-pragmatics) 
-
-## Usage
-
-```javascript
-import Component from 'babelute-html-component';
-import htmlLexicon from 'babelute-html-lexicon';
-
-const MyComponent = Component.extends(Component, {
-	getInitialState:function(props){
-		return {
-			title: 'Hello world'
-			...
-		};
-	},
-	componentWillMount() {
-		...
-	},
-	componentDidUnmount(){
-		...
-	},
-	doSomething(event, arg) {
-		console.log('bam!', arg);
-	},
-	render: function(firstLevel){
-		var h = htmlLexicon.initializer(firstLevel);
-		return h.div(h.h1(thi.state.title).button('foo', h.click(this.doSomething)), ...);
-	}
-});
-
-// usage :
-const h = htmlLexicon.initializer(/* true if you use FirstLevel Diffing, false otherwise */);
-const mySentence = h.div('...', h.component(MyComponent, { /* component props */ }));
-
-```
-
-
+Use [htsl-component](https://github.com/nomocas/htsl-component) in place.
 
 ## Licence
 
